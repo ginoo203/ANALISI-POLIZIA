@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TerraShift - Analysis | Polizia Postale</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fixed header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="assets/polizia-postale-logo.png" alt="Logo Polizia Postale" />
+        <div class="title">
+          <strong>TerraShift</strong>
+          <span>Polizia Postale e delle Comunicazioni</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Main">
+        <a class="active" href="index.html">Analysis</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="header-spacer"></div>
+
+  <!-- Main content -->
+  <main class="container">
+    <div class="grid" role="region" aria-label="Analysis workspace">
+      <!-- Left: Controls & Summary -->
+      <aside class="panel" aria-labelledby="controls-title">
+        <h2 id="controls-title">Analysis Controls</h2>
+        <form action="#" method="get" class="form-grid" aria-describedby="controls-hint">
+          <div class="field">
+            <label for="location">Enter a location...</label>
+            <input class="input" type="text" id="location" name="q" placeholder="Es. Roma, Italia" />
+          </div>
+          <div class="field">
+            <label for="start">Start Date</label>
+            <input class="input" type="date" id="start" name="start" />
+          </div>
+          <div class="field">
+            <label for="end">End Date</label>
+            <input class="input" type="date" id="end" name="end" />
+          </div>
+          <button class="button" type="submit">Analyze Changes</button>
+          <p id="controls-hint" class="field hint">Seleziona le date per confrontare immagini satellitari e visualizzare le aree di cambiamento.</p>
+        </form>
+
+        <div class="spacer"></div>
+        <hr style="border:0;border-top:1px solid var(--border); opacity:.7" />
+        <div class="spacer"></div>
+
+        <section aria-labelledby="summary-title">
+          <h2 id="summary-title">Change Summary</h2>
+          <p>Questo report dimostrativo evidenzia variazioni urbanistiche e mutamenti di copertura del suolo tra l’intervallo selezionato. I cluster colorati indicano potenziali cantieri, ristrutturazioni o modifiche infrastrutturali.</p>
+          <p>Le regioni in rosso rappresentano cambiamenti ad alta intensità (nuove superfici impermeabili, demolizioni rilevanti), mentre quelle in giallo riflettono mutamenti moderati come riasfaltature o ampliamenti di aree di parcheggio.</p>
+          <p>I risultati sono puramente esemplificativi: sostituendo i parametri sopra, la pagina mostrerà diverse aree con livelli di variazione simulata.</p>
+        </section>
+      </aside>
+
+      <!-- Right: Image Display -->
+      <section class="stack" aria-label="Image comparisons">
+        <article class="image-card">
+          <h3>Before Image</h3>
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=1600&auto=format&fit=crop" alt="Satellite before placeholder" />
+          </div>
+        </article>
+
+        <article class="image-card">
+          <h3>After Image</h3>
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1465447142348-e9952c393450?q=80&w=1600&auto=format&fit=crop" alt="Satellite after placeholder" />
+          </div>
+        </article>
+
+        <article class="image-card">
+          <h3>Change Overlay</h3>
+          <div class="image-frame overlay-map">
+            <img src="https://images.unsplash.com/photo-1465447142348-e9952c393450?q=80&w=1600&auto=format&fit=crop" alt="Change overlay placeholder" />
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TerraShift - Create Account | Polizia Postale</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="assets/polizia-postale-logo.png" alt="Logo Polizia Postale" />
+        <div class="title">
+          <strong>TerraShift</strong>
+          <span>Polizia Postale e delle Comunicazioni</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Analysis</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+  <div class="header-spacer"></div>
+
+  <main class="fullscreen-bg" role="main">
+    <section class="card" aria-labelledby="register-title">
+      <div class="meta">Registrazione</div>
+      <h1 id="register-title">TerraShift - Create Account</h1>
+      <form class="auth-form" action="#" method="post" autocomplete="on">
+        <div class="field">
+          <label for="fullname">Full Name</label>
+          <input class="input" type="text" id="fullname" name="fullname" placeholder="Nome Cognome" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" name="email" placeholder="nome.cognome@poliziadistato.it" required />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input class="input" type="password" id="password" name="password" placeholder="Crea una password" required />
+        </div>
+        <div class="spacer"></div>
+        <button class="button block" type="submit">Create Account</button>
+
+        <div class="auth-links">
+          <a href="login.html">Already have an account? Sign In</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
